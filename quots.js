@@ -1,4 +1,4 @@
-let quotesList = ["Vær den forandring, du ønsker at se i verden.", 
+let quotes = ["Vær den forandring, du ønsker at se i verden.", 
                 "To be, or not to be, that is the question.",
                 "I think, therefore I am.",
                 "The only thing we have to fear is fear itself.",
@@ -9,11 +9,19 @@ let quotesList = ["Vær den forandring, du ønsker at se i verden.",
                 "Injustice anywhere is a threat to justice everywhere.",
                 "Life is what happens when you're busy making other plans."];
 
-let quouteElmt = document.querySelector("blockquote");
+let quotesElmt = document.querySelector("blockquote");
 
+console.log(quotes)
 
+let randomIndex = Math.floor(Math.random() * quotes.length);    //generer et index som vælger et random quote
 
+quotes.forEach(function(quote, index) {         //'(quote, index) =>'  er samme som 'function(quote, index)'
+    if (index === randomIndex) {
+        quotesElmt.innerHTML = quote; // Opdatér teksten med det tilfældige citat
+    }
+});
 
+//Det er ikke optimalt eller nødvendigt at bruge loop til dette, men jeg forstår som om det er meningen øvelsen skal laves med loop/løkke. 
 
 
 /* 
