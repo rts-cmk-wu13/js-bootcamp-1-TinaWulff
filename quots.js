@@ -1,4 +1,4 @@
-let qoutesList = ["Vær den forandring, du ønsker at se i verden.", 
+let quotesList = ["Vær den forandring, du ønsker at se i verden.", 
                 "To be, or not to be, that is the question.",
                 "I think, therefore I am.",
                 "The only thing we have to fear is fear itself.",
@@ -7,8 +7,9 @@ let qoutesList = ["Vær den forandring, du ønsker at se i verden.",
                 "Success is not final, failure is not fatal: it is the courage to continue that counts.",
                 "The future belongs to those who believe in the beauty of their dreams.",
                 "Injustice anywhere is a threat to justice everywhere.",
-                "Life is what happens when you're busy making other plans."]
+                "Life is what happens when you're busy making other plans."];
 
+let quouteElmt = document.querySelector("blockquote");
 
 
 
